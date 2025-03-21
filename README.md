@@ -22,4 +22,3 @@ Puedes instalar Galera con pip:
 
 ```bash
 pip install galera
-´´´
