@@ -11,9 +11,10 @@ Con soporte para **HTML estático y dinámico**, Galera permite obtener datos de
 ✅ **Soporte para Selenium** → Scraping de páginas con JavaScript.  
 ✅ **Extracción de imágenes, texto y enlaces** 📸🔗  
 ✅ **Navegación por paginación** 📄➡️📄  
-✅ **Exportación a CSV, JSON y SQLite** 📊  
+✅ **Exportación a CSV, JSON** 📊  
 ✅ **Evasión de bloqueos con User-Agent y proxies** 🛡️  
 ✅ **Modo CLI para ejecutar desde la terminal** 💻  
+✅ **Multiprocessing** → Mejorar la eficiencia
 
 ---
 

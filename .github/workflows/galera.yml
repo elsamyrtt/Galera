@@ -1,0 +1,25 @@
+name: galera
+description: Módulo de Python para Web Scraping con soporte para HTML estático y dinámico.
+version: "0.0.1"
+author: "Samir"
+license: MIT
+dependencies:
+  - beautifulsoup4
+  - selenium
+  - requests
+  - pandas
+  - click  # Para CLI
+features:
+  - Scraping con BeautifulSoup
+  - Soporte para Selenium
+  - Extracción de imágenes, texto y enlaces
+  - Navegación por paginación
+  - Exportación a CSV y JSON
+  - Evasión de bloqueos con User-Agent y proxies
+  - Modo CLI para ejecutar desde la terminal
+  - Multiprocessing Para mejorar la eficiencia
+install:
+  command: pip install galera
+cli:
+  command: galera
+  description: Ejecuta Galera desde la terminal para realizar scraping fácilmente.
