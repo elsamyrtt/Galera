@@ -11,3 +11,4 @@ torch
 pymongo
 psycopg2-binary
 elasticsearch
+#Tambien es necesario un compilador de c++[icl,cl,cc,gcc,clang,clang-cl,pgcc]
