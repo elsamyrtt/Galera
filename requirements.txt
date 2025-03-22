@@ -1,0 +1,13 @@
+beautifulsoup4
+requests
+selenium
+pandas
+scikit-learn
+matplotlib
+seaborn
+spacy
+sentence-transformers
+torch
+pymongo
+psycopg2-binary
+elasticsearch
