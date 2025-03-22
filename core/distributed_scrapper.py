@@ -4,9 +4,9 @@ import asyncio
 from typing import Dict, Any, List, Optional, Union, Callable
 from concurrent.futures import ProcessPoolExecutor
 
-from .base_scraper import BaseScraper
-from .static_scraper import StaticScraper
-from .dynamic_scraper import DynamicScraper
+from galera.core.base_scrapper import BaseScraper
+from galera.core.static_scrapper import StaticScraper
+from galera.core.dynamic_scrapper import DynamicScraper
 
 class DistributedScraper:
     """

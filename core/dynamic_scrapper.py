@@ -9,12 +9,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, WebDriverException
 from bs4 import BeautifulSoup
 
-from .base_scraper import BaseScraper
-from ..extractors.text_extractor import TextExtractor
-from ..extractors.image_extractor import ImageExtractor
-from ..extractors.link_extractor import LinkExtractor
-from ..extractors.video_extractor import VideoExtractor
-from ..extractors.api_extractor import ApiExtractor
+from galera.core.base_scrapper import BaseScraper
+from galera.extractor.text_extractor import TextExtractor
+from galera.extractor.image_extractor import ImageExtractor
+from galera.extractor.link_extractor import LinkExtractor
+from galera.extractor.video_extractor import VideoExtractor
+from galera.extractor.api_extractor import ApiExtractor
 
 class DynamicScraper(BaseScraper):
     """

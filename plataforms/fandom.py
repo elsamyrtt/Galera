@@ -1,4 +1,4 @@
-from ..core.static_scraper import StaticScraper
+from galera.core.static_scrapper import StaticScraper
 from bs4 import BeautifulSoup
 
 class FandomScraper(StaticScraper):

@@ -6,6 +6,7 @@ import re
 import random
 from typing import Optional, Dict, Any, Union
 from PIL import Image
+from pytesseract import image_to_string
 import io
 import requests
 
@@ -270,7 +271,6 @@ class CaptchaSolver:
             Texto reconocido de la imagen
         """
         try:
-            from pytesseract import image_to_string
             img = Image.open(io.BytesIO(img_data))
             text = image_to_string(img)
             return text.strip()

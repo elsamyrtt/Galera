@@ -9,6 +9,7 @@ spacy
 sentence-transformers
 torch
 pymongo
+pytesseract
 psycopg2-binary
 elasticsearch
-#Tambien es necesario un compilador de c++[icl,cl,cc,gcc,clang,clang-cl,pgcc]
+#Tambien es necesario un compilador de c++[icl,cl,cc,gcc,clang,clang-cl,pgcc] Recomendamos usar python 3.10.0 o similares

@@ -1,4 +1,4 @@
-from ..core.dynamic_scraper import DynamicScraper
+from galera.core.dynamic_scrapper import DynamicScraper
 from bs4 import BeautifulSoup
 
 class TwitterScraper(DynamicScraper):

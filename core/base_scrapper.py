@@ -6,12 +6,11 @@ from typing import List, Dict, Any, Optional, Union
 from concurrent.futures import ThreadPoolExecutor
 import multiprocessing
 import asyncio
-import aiohttp
 
-from ..utils.proxy_manager import ProxyManager
-from ..utils.human_behavior import HumanBehaviorSimulator
-from ..utils.captcha_solver import CaptchaSolver
-from ..utils.request_utils import RequestsManager
+from galera.utils.proxy_manager import ProxyManager
+from galera.utils.human_behavior import HumanBehaviorSimulator
+from galera.utils.captcha_solver import CaptchaSolver
+from galera.utils.request_utils import RequestsManager
 
 class BaseScraper(ABC):
     """

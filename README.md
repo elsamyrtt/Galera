@@ -56,19 +56,23 @@ Edita los archivos de configuración ubicados en el directorio `config/` para ad
 Utiliza el scraper estático para recolectar información de páginas con contenido HTML fijo:
 
 ```python
-from galera.core.static_scrapper import StaticScraper
-from galera.storage.json_storage import JSONStorage
+import galera
+import galera.core
+import galera.storage
 
-# Configuración del scraper con proxies y simulación de comportamiento humano
-scraper = StaticScraper(use_proxies=True, simulate_human=True)
+if __name__ == '__main__':
+    # Configuración del scraper sin usar proxies
+    scraper = galera.core.StaticScraper(use_proxies=False, simulate_human=True)
 
-# URL a scrapear
-url = "https://example.com"
-data = scraper.scrape(url)
-
-# Guardar los datos extraídos en formato JSON
-storage = JSONStorage("data/scraped_data.json")
-storage.save_data(data)
+    # Realizar scraping de una URL
+    url = "https://clespacios.com"
+    try:
+        data = scraper.scrape(url)
+        # Guardar datos en un archivo JSON
+        storage = galera.storage.JSONStorage("data/scraped_data.json")
+        storage.save_data(data)
+    except Exception as e:
+        print(f"Error durante el scraping: {e}")
 ```
 
 ### Scraping Dinámico
